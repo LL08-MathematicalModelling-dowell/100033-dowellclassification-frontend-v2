@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/100033-dowellclassification/static/css/main.00285e01.css",
-    "main.js": "/100033-dowellclassification/static/js/main.dbef8efc.js",
-    "index.html": "/100033-dowellclassification/index.html",
-    "main.00285e01.css.map": "/100033-dowellclassification/static/css/main.00285e01.css.map",
-    "main.dbef8efc.js.map": "/100033-dowellclassification/static/js/main.dbef8efc.js.map"
+    "main.css": "/100033-dowellclassification-frontend-v2/static/css/main.00285e01.css",
+    "main.js": "/100033-dowellclassification-frontend-v2/static/js/main.dbef8efc.js",
+    "index.html": "/100033-dowellclassification-frontend-v2/index.html",
+    "main.00285e01.css.map": "/100033-dowellclassification-frontend-v2/static/css/main.00285e01.css.map",
+    "main.dbef8efc.js.map": "/100033-dowellclassification-frontend-v2/static/js/main.dbef8efc.js.map"
   },
   "entrypoints": [
     "static/css/main.00285e01.css",
