@@ -1124,27 +1124,29 @@ const NonHierarchical = (props) => {
                     </h1>
 
                     <div className="flex items-center justify-center gap-5 flex-wrap">
-                      {permutations.map((item, index) => (
-                        <button
-                          onMouseUp={handlePermutation4}
-                          onClick={(e) => {
-                            basket3ItemsPermutation(e);
-                            setShowItemsPermutation(false);
-                            setItemScreen6(true);
-                          }}
-                          className={
-                            parseInt(isItemSelected) === index
-                              ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                              : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                          }
-                          name={index}
-                          value={item}
-                          type="button"
-                          key={index}
-                        >
-                          {JSON.stringify(item)}
-                        </button>
-                      ))}
+                      {permutations === undefined
+                        ? ""
+                        : permutations.map((item, index) => (
+                            <button
+                              onMouseUp={handlePermutation4}
+                              onClick={(e) => {
+                                basket3ItemsPermutation(e);
+                                setShowItemsPermutation(false);
+                                setItemScreen6(true);
+                              }}
+                              className={
+                                parseInt(isItemSelected) === index
+                                  ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                  : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                              }
+                              name={index}
+                              value={item}
+                              type="button"
+                              key={index}
+                            >
+                              {JSON.stringify(item)}
+                            </button>
+                          ))}
                     </div>
                   </form>
                 ) : (
@@ -1250,27 +1252,29 @@ const NonHierarchical = (props) => {
                             </h1>
 
                             <div className="flex items-center justify-center gap-5 flex-wrap">
-                              {permutations.map((item, index) => (
-                                <button
-                                  onMouseUp={handlePermutation3}
-                                  onClick={(e) => {
-                                    basket2ItemsPermutation(e);
-                                    setShowItemsPermutation(false);
-                                    setItemScreen4(true);
-                                  }}
-                                  className={
-                                    parseInt(isItemSelected) === index
-                                      ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                                      : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                                  }
-                                  name={index}
-                                  value={item}
-                                  type="button"
-                                  key={index}
-                                >
-                                  {JSON.stringify(item)}
-                                </button>
-                              ))}
+                              {permutations === undefined
+                                ? ""
+                                : permutations.map((item, index) => (
+                                    <button
+                                      onMouseUp={handlePermutation3}
+                                      onClick={(e) => {
+                                        basket2ItemsPermutation(e);
+                                        setShowItemsPermutation(false);
+                                        setItemScreen4(true);
+                                      }}
+                                      className={
+                                        parseInt(isItemSelected) === index
+                                          ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                          : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                                      }
+                                      name={index}
+                                      value={item}
+                                      type="button"
+                                      key={index}
+                                    >
+                                      {JSON.stringify(item)}
+                                    </button>
+                                  ))}
                             </div>
                           </form>
                         ) : (
@@ -1341,26 +1345,28 @@ const NonHierarchical = (props) => {
                                 </h1>
 
                                 <div className="flex items-center justify-center gap-5 flex-wrap">
-                                  {permutations.map((item, index) => (
-                                    <button
-                                      onMouseUp={handlePermutation2}
-                                      onClick={() => {
-                                        setShowItemsPermutation(false);
-                                        setItemScreen3(true);
-                                      }}
-                                      className={
-                                        parseInt(isItemSelected) === index
-                                          ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                                          : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                                      }
-                                      name={index}
-                                      value={item}
-                                      type="button"
-                                      key={index}
-                                    >
-                                      {JSON.stringify(item)}
-                                    </button>
-                                  ))}
+                                  {permutations === undefined
+                                    ? ""
+                                    : permutations.map((item, index) => (
+                                        <button
+                                          onMouseUp={handlePermutation2}
+                                          onClick={() => {
+                                            setShowItemsPermutation(false);
+                                            setItemScreen3(true);
+                                          }}
+                                          className={
+                                            parseInt(isItemSelected) === index
+                                              ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                              : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                                          }
+                                          name={index}
+                                          value={item}
+                                          type="button"
+                                          key={index}
+                                        >
+                                          {JSON.stringify(item)}
+                                        </button>
+                                      ))}
                                 </div>
                               </form>
                             ) : (
@@ -1418,27 +1424,30 @@ const NonHierarchical = (props) => {
                                     </h1>
 
                                     <div className="flex items-center justify-center gap-5 flex-wrap">
-                                      {permutations.map((item, index) => (
-                                        <button
-                                          onMouseUp={handlePermutation2}
-                                          onClick={(e) => {
-                                            basket1ItemsPermutation(e);
-                                            setShowItemsPermutation(false);
-                                            setItemScreen2(true);
-                                          }}
-                                          className={
-                                            parseInt(isItemSelected) === index
-                                              ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                                              : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                                          }
-                                          name={index}
-                                          value={item}
-                                          type="button"
-                                          key={index}
-                                        >
-                                          {JSON.stringify(item)}
-                                        </button>
-                                      ))}
+                                      {permutations === undefined
+                                        ? ""
+                                        : permutations.map((item, index) => (
+                                            <button
+                                              onMouseUp={handlePermutation2}
+                                              onClick={(e) => {
+                                                basket1ItemsPermutation(e);
+                                                setShowItemsPermutation(false);
+                                                setItemScreen2(true);
+                                              }}
+                                              className={
+                                                parseInt(isItemSelected) ===
+                                                index
+                                                  ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                                  : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                                              }
+                                              name={index}
+                                              value={item}
+                                              type="button"
+                                              key={index}
+                                            >
+                                              {JSON.stringify(item)}
+                                            </button>
+                                          ))}
                                     </div>
                                   </form>
                                 ) : (
@@ -1548,30 +1557,36 @@ const NonHierarchical = (props) => {
                                           </h1>
 
                                           <div className="flex items-center justify-center gap-5 flex-wrap">
-                                            {permutations.map((item, index) => (
-                                              <button
-                                                onMouseUp={(e) =>
-                                                  handlePermutation1(e)
-                                                }
-                                                onClick={(e) => {
-                                                  basket3Permutation(e);
-                                                  submitFinalizingBasket(e);
-                                                }}
-                                                className={
-                                                  parseInt(
-                                                    isPermutationSelected
-                                                  ) === index
-                                                    ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                                                    : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                                                }
-                                                name={index}
-                                                value={item}
-                                                type="button"
-                                                key={index}
-                                              >
-                                                {JSON.stringify(item)}
-                                              </button>
-                                            ))}
+                                            {permutations === undefined
+                                              ? ""
+                                              : permutations.map(
+                                                  (item, index) => (
+                                                    <button
+                                                      onMouseUp={(e) =>
+                                                        handlePermutation1(e)
+                                                      }
+                                                      onClick={(e) => {
+                                                        basket3Permutation(e);
+                                                        submitFinalizingBasket(
+                                                          e
+                                                        );
+                                                      }}
+                                                      className={
+                                                        parseInt(
+                                                          isPermutationSelected
+                                                        ) === index
+                                                          ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                                          : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                                                      }
+                                                      name={index}
+                                                      value={item}
+                                                      type="button"
+                                                      key={index}
+                                                    >
+                                                      {JSON.stringify(item)}
+                                                    </button>
+                                                  )
+                                                )}
                                           </div>
                                         </form>
                                       </>
@@ -1633,33 +1648,37 @@ const NonHierarchical = (props) => {
                                                   </h1>
 
                                                   <div className="flex items-center justify-center gap-5 flex-wrap">
-                                                    {permutations.map(
-                                                      (item, index) => (
-                                                        <button
-                                                          onMouseUp={(e) =>
-                                                            handlePermutation1(
-                                                              e
-                                                            )
-                                                          }
-                                                          onClick={
-                                                            basket2Permutation
-                                                          }
-                                                          className={
-                                                            parseInt(
-                                                              isPermutationSelected
-                                                            ) === index
-                                                              ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
-                                                              : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
-                                                          }
-                                                          name={index}
-                                                          value={item}
-                                                          type="button"
-                                                          key={index}
-                                                        >
-                                                          {JSON.stringify(item)}
-                                                        </button>
-                                                      )
-                                                    )}
+                                                    {permutations === undefined
+                                                      ? ""
+                                                      : permutations.map(
+                                                          (item, index) => (
+                                                            <button
+                                                              onMouseUp={(e) =>
+                                                                handlePermutation1(
+                                                                  e
+                                                                )
+                                                              }
+                                                              onClick={
+                                                                basket2Permutation
+                                                              }
+                                                              className={
+                                                                parseInt(
+                                                                  isPermutationSelected
+                                                                ) === index
+                                                                  ? "bg-purple-700 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-500"
+                                                                  : "bg-purple-500 cursor-pointer text-white font-semibold py-2 px-5 rounded hover:bg-purple-700"
+                                                              }
+                                                              name={index}
+                                                              value={item}
+                                                              type="button"
+                                                              key={index}
+                                                            >
+                                                              {JSON.stringify(
+                                                                item
+                                                              )}
+                                                            </button>
+                                                          )
+                                                        )}
                                                   </div>
                                                 </form>
                                               </>
